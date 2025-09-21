@@ -1,0 +1,4 @@
+name = input('Имя: ')
+ln = [nam[0] for nam in name.split()]
+print('Инициалы:', ''.join(ln))
+print('Длина (символов):', len(' '.join(name.split())))
