@@ -7,7 +7,7 @@ name = input('Имя: ')
 age = int(input('Возраст: '))
 print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
-![Картинка 1](/images/e01_img.png)
+![Картинка 1](/scr/lab01/img/e01_img.png)
 
 ### Задание 2
 ```python
