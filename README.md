@@ -7,7 +7,7 @@ name = input('Имя: ')
 age = int(input('Возраст: '))
 print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
-![Картинка 1](/Users/sona/Desktop/prog/scr/lab01/img/e01_img.png)
+![Картинка 1](/images/e01_img.png)
 
 ### Задание 2
 ```python
@@ -15,4 +15,4 @@ a = float(input('a: ').replace(',','.'))
 b = float(input('b: ').replace(',','.'))
 print(f"sum={round(a+b,2)}; avg={round((a+b)/2,2)}")
 ```
-![Картинка 2](/Users/sona/Desktop/prog/scr/lab01/img/e02_img.png)
+![Картинка 2](/images/e02_img.png)
