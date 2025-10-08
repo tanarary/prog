@@ -160,4 +160,4 @@ def format_record(rec: tuple[str, str, float]) -> str:
     if type(rec[0]) != str or type(rec[1]) != str or type(rec[2]) != float:
         raise TypeError
 ```
-![Картинка 7](/scr/lab02/img/e03_img.png)
+![Картинка 7](//Users/sona/Desktop/prog/scr/lab02/images/e01_1_img.png)
