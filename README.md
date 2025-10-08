@@ -7,7 +7,7 @@ name = input('Имя: ')
 age = int(input('Возраст: '))
 print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
-![Картинка 1](/scr/lab01/img/e01_img.png)
+![Картинка 1](scr/lab01/images/e01_img.png)
 
 ### Задание 2
 ```python
@@ -15,7 +15,7 @@ a = float(input('a: ').replace(',','.'))
 b = float(input('b: ').replace(',','.'))
 print(f"sum={round(a+b,2)}; avg={round((a+b)/2,2)}")
 ```
-![Картинка 2](/scr/lab01/img/e02_img.png)
+![Картинка 2](scr/lab01/images/e02_img.png)
 
 ### Задание 3
 ```python
@@ -27,14 +27,14 @@ print(f"""База после скидки: {base} ₽
 НДС:               {base * (vat/100)} ₽
 Итого к оплате:    {base * (vat/100) + base} ₽""")
 ```
-![Картинка 3](/scr/lab01/img/e03_img.png)
+![Картинка 3](scr/lab01/images/e03_img.png)
 
 ### Задание 4
 ```python
 m = int(input('Минуты: '))
 print(f"{m // 60}:{m% 60}")
 ```
-![Картинка 4](/scr/lab01/img/e04_img.png)
+![Картинка 4](scr/lab01/images/e04_img.png)
 
 ### Задание 5
 ```python
@@ -43,7 +43,7 @@ ln = [nam[0] for nam in name.split()]
 print('Инициалы:', ''.join(ln))
 print('Длина (символов):', len(' '.join(name.split())))
 ```
-![Картинка 5](/scr/lab01/img/e05_img.png)
+![Картинка 5](scr/lab01/images/e05_img.png)
 
 ## Лабораторная работа 2
 
@@ -52,7 +52,7 @@ print('Длина (символов):', len(' '.join(name.split())))
 def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     return min(nums), max(nums)
 ```
-![Картинка 1](/scr/lab02/img/e01_1_img.png)
+![Картинка 1](scr/lab02/images/e01_1_img.png)
 
 ### Задание 2
 ```python
@@ -61,7 +61,7 @@ def unique_sorted(ls: list[float | int]) -> list[float | int]:
 
 ```
     
-![Картинка 2](/scr/lab02/img/e01_2_img.png)
+![Картинка 2](scr/lab02/images/e01_2_img.png)
 
 
 ### Задание 3
@@ -76,7 +76,7 @@ def flatten(mat: list[list | tuple]) -> list:
     return fl
 
 ```
-![Картинка 3](/scr/lab02/img/e01_3_img.png)
+![Картинка 3](scr/lab02/images/e01_3_img.png)
 
 ### Задание 4
 ```python
@@ -99,7 +99,7 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
 
 
 ```
-![Картинка 4](/scr/lab02/img/e02_1_img.png)
+![Картинка 4](scr/lab02/images/e02_1_img.png)
 
 
 ### Задание 5
@@ -121,7 +121,7 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
         new.append(s)
     return new 
 ```
-![Картинка 5](/scr/lab02/img/e02_2_img.png)
+![Картинка 5](scr/lab02/images/e02_2_img.png)
 
 ### Задание 6
 ```python
@@ -139,7 +139,7 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         new.append(s)
     return new 
 ```
-![Картинка 5](/scr/lab02/img/e02_3_img.png)
+![Картинка 5](scr/lab02/images/e02_3_img.png)
 
 ### Задание 7
 ```python
@@ -160,4 +160,4 @@ def format_record(rec: tuple[str, str, float]) -> str:
     if type(rec[0]) != str or type(rec[1]) != str or type(rec[2]) != float:
         raise TypeError
 ```
-![Картинка 7](./img/lab02/e03_img.png)
+![Картинка 7](scr/lab02/images/e03_img.png)
