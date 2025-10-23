@@ -11,6 +11,8 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     text = text.strip()
     return text
 
+
+
 def tokenize(text: str) -> list[str]:
     return re.findall(r'\w+(?:-\w+)*', text)
 

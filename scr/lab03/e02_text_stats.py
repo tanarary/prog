@@ -3,7 +3,6 @@ from lib.e01_text import tokenize, count_freq, top_n, normalize
 
 def main():
     try:
-        # Проверяем, есть ли данные в stdin
         if sys.stdin.isatty():
             print("Ожидание ввода данных...")
             print("Введите текст и нажмите Ctrl+D (Mac/Linux) для завершения ввода:")
@@ -39,5 +38,5 @@ def main():
     except Exception as e:
         print(f"Произошла ошибка: {e}")
 
-if __name__ == "__main__":  # Исправлено здесь
+if __name__ == "__main__": 
     main()
