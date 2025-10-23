@@ -299,7 +299,7 @@ write_csv([("word","count"),("test",3)], r"/Users/sona/Desktop/prog/scr/data/che
 ![Картинка 2](scr/lab04/img/e01_2_img.png)
 
 
-## Задание B — скрипт src/lab04/text_report.py
+## Задание B — text_report.py
 ```python
 from lib.e01_io_txt_csv import read_text, write_csv, ensure_parent_dir
 import sys
