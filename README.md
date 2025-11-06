@@ -1,1 +1,5 @@
 [lab01](./scr/lab01/README.md)
+[lab02](./scr/lab02/README.md)
+[lab03](./scr/lab03/README.md)
+[lab04](./scr/lab04/README.md)
+[lab05](./scr/lab05/README.md)
