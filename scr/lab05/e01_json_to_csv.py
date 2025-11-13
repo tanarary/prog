@@ -2,11 +2,17 @@ import json
 import csv
 from pathlib import Path
 
+def ensure_relative(path: Path) -> None:
+    if path.is_absolute():
+        raise ValueError("Путь должен быть относительным")
+
 
 def json_to_csv(json_path: str, csv_path: str) -> None:
 
     json_file = Path(json_path)
     csv_file = Path(csv_path)
+    ensure_relative(json_file)
+    ensure_relative(csv_file)
     
     if not json_file.exists():
         raise FileNotFoundError(f"Файл {json_path} не найден")
@@ -16,7 +22,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     
     try:
         with json_file.open('r', encoding='utf-8') as f:
-            data = json.load(f)
+            data = json.load(f) #преобразовывет в питоновский файл   
     except json.JSONDecodeError as e:
         raise ValueError(f"Ошибка чтения JSON: {e}")
     
@@ -77,9 +83,9 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
     try:
         with json_file.open('w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+            json.dump(data, f, ensure_ascii=False, indent=2) #из питона в json
     except Exception as e:
         raise ValueError(f"Ошибка записи JSON: {e}")
 
-json_to_csv('scr/data/samples/people.json', 'scr/data/out/people_from_json.csv')
+json_to_csv('scr/data/samples/people.json', 'scr/data/out/people_from_json.csv') 
 csv_to_json('scr/data/samples/people.csv', 'scr/data/out/people_from_csv.json')
