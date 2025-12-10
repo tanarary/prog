@@ -79,6 +79,3 @@ def test_full_pipeline():
     assert freq == {"привет": 2, "мир": 2, "всем": 1, "прекрасен": 1}
     assert top_words == [("мир", 2), ("привет", 2)]
 
-#python3 -m pytest scr/tests/test_text.py -v
-#black --check .
-#python3 -m pytest --cov=src --cov-report=term-missing scr/tests/test_text.py
