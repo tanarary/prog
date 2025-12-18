@@ -57,9 +57,9 @@ if __name__ == "__main__":
     try:
         student = Student(
             fio="Иванов Иван Иванович",
-            birthdate="2007-02-19",
-            group="БИВТ-1-1",
-            gpa=3.5
+            birthdate="2007-12-14",
+            group="БИВТ-25-1",
+            gpa=3.3
         )
         print(student)
         print(f"Словарь: {student.to_dict()}")
